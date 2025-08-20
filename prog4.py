@@ -1,3 +1,7 @@
+# Programa 4 – Tabuada
 numero = int(input("Digite um número: "))
-for i in range(1,10):
-    print(numero * i)
+
+print(f"Tabuada do {numero}:")
+for i in range(1, 11):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")

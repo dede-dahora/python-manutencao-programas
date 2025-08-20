@@ -1,10 +1,11 @@
-op = int(input("Digite um número entre 1 e 3: "))
+# Programa 12 – Menu com elif
+opcao = int(input("Digite uma opção (1-3): "))
 
-if op == 1:
+if opcao == 1:
     print("Você escolheu a opção 1")
-if op == 2:
+elif opcao == 2:
     print("Você escolheu a opção 2")
-if op == 3:
+elif opcao == 3:
     print("Você escolheu a opção 3")
 else:
     print("Opção inválida")

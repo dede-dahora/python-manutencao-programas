@@ -1,13 +1,11 @@
+# Programa 11 – Função Soma
 def soma_valores(lista):
-    total = 0
-    for x in lista:
-        total = x
-    return total
+    return sum(lista)
 
 numeros = []
 for i in range(5):
-    n = int(input("Digite um número: "))
-    numeros.append(n)
+    num = float(input(f"Digite o {i+1}º número: "))
+    numeros.append(num)
 
-resultado = soma_valores
-print("Soma =", resultado)
+resultado = soma_valores(numeros)
+print(f"A soma dos valores é: {resultado}")

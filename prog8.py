@@ -1,7 +1,10 @@
-senha_correta = "1234"
+# Programa 8 – Validação de Senha
+senha_correta = "senha123"
 
 while True:
     senha = input("Digite a senha: ")
     if senha == senha_correta:
         print("Acesso liberado")
-    break   
+        break
+    else:
+        print("Senha incorreta. Tente novamente.")

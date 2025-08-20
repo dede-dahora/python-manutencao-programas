@@ -1,30 +1,25 @@
+# Programa 3 – Caixa Eletrônico
 valor = int(input("Digite o valor: "))
-
-notas1 = valor // 1
-valor = valor % 1
-
-notas2 = valor // 2
-valor = valor % 2
-
-notas5 = valor // 5
-valor = valor % 5
-
-notas10 = valor // 10
-valor = valor % 10
-
-notas20 = valor // 20
-valor = valor % 20
-
-notas50 = valor // 50
-valor = valor % 50
 
 notas100 = valor // 100
 valor = valor % 100
 
-print("100:", notas100)
-print("50 :", notas50)
-print("20 :", notas20)
-print("10 :", notas10)
-print("5  :", notas5)
-print("2  :", notas2)
-print("1  :", notas1)
+notas50 = valor // 50
+valor = valor % 50
+
+notas20 = valor // 20
+valor = valor % 20
+
+notas10 = valor // 10
+
+resultado = []
+if notas100 > 0:
+    resultado.append(f"{notas100} notas de 100")
+if notas50 > 0:
+    resultado.append(f"{notas50} notas de 50")
+if notas20 > 0:
+    resultado.append(f"{notas20} notas de 20")
+if notas10 > 0:
+    resultado.append(f"{notas10} notas de 10")
+
+print(" + ".join(resultado))

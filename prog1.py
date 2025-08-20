@@ -1,10 +1,11 @@
-nota1 = input("Digite a primeira nota: ")
-nota2 = input("Digite a segunda nota: ")
-nota3 = input("Digite a terceira nota: ")
+# Programa 1 – Calculadora de Média
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
 
 media = (nota1 + nota2 + nota3) / 3
 
-if media > 7:
+if media >= 7:
     print("Aprovado")
-if media < 7:
+else:
     print("Reprovado")

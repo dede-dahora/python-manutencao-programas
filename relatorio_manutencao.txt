@@ -8,14 +8,26 @@ e qual alteração você fez para resolver o problema.
 
 Programa 1 – Calculadora de Média
 Descrição da manutenção realizada:
+Conversão para float: O input() retorna strings, então é necessário converter para números usando float()
 
+Condição de média exata 7: Usei >= 7 para que quem tirar exatamente 7 seja aprovado
+
+Estrutura else: Substituí o segundo if por else para ser mais eficiente e evitar verificações desnecessárias
 
 
 ----------------------------------------------------------------------------
 
 Programa 2 – Contador de Números Pares
 Descrição da manutenção realizada:
+Principais correções:
 
+Removi a condição if i <= 2: - Esta condição limitava a impressão apenas aos números 0, 1 e 2, independentemente do valor de n digitado pelo usuário
+
+Mantive a lógica do loop - O loop while i < n: está correto para imprimir números de 0 até n-1
+
+Exemplo de execução:
+
+Se o usuário digitar 5, o programa imprimirá: 0, 1, 2, 3, 4
 
 
 ----------------------------------------------------------------------------
@@ -23,6 +35,13 @@ Descrição da manutenção realizada:
 Programa 3 – Caixa Eletrônico
 Descrição da manutenção realizada:
 
+Ordem decrescente de notas (100 → 50 → 20 → 10)
+
+Cálculo correto do resto após cada operação
+
+Exibição apenas das notas utilizadas
+
+Formatação com join() para saída elegante
 
 
 
@@ -31,14 +50,24 @@ Descrição da manutenção realizada:
 
 Programa 4 – Tabuada
 Descrição da manutenção realizada:
+Loop for de 1 a 10 inclusivo
 
+Formatação com f-strings para clareza
+
+Cálculo em tempo real dentro do loop
 
 
 ----------------------------------------------------------------------------
 
 Programa 5 – Jogo de Adivinhação
 Descrição da manutenção realizada:
+Importação correta do módulo random
 
+Geração de número aleatório entre 1-20
+
+Feedback imediato (maior/menor)
+
+Loop infinito com break no acerto
 
 
 
@@ -47,21 +76,33 @@ Descrição da manutenção realizada:
 
 Programa 6 – Busca em Lista
 Descrição da manutenção realizada:
+Armazenamento em lista com append()
 
+Busca sequencial com break no encontro
+
+Flag encontrado para controle de fluxo
 
 
 ----------------------------------------------------------------------------
 
 Programa 7 – Impressão de Ímpares
 Descrição da manutenção realizada:
+Uso correto do continue para pular pares
 
+Range inclusivo (1 até N)
+
+Exibição em linha única
 
 
 ----------------------------------------------------------------------------
 
 Programa 8 – Validação de Senha
 Descrição da manutenção realizada:
+Loop infinito com break na senha correta
 
+Senha hardcoded para demonstração
+
+Feedback imediato de erro
 
 
 
@@ -70,28 +111,44 @@ Descrição da manutenção realizada:
 
 Programa 9 – Contagem de Vogais
 Descrição da manutenção realizada:
+Conversão para minúsculas com lower()
 
+String de vogais para verificação
+
+Contador incremental
 
 
 ----------------------------------------------------------------------------
 
 Programa 10 – Acumulador de Valores
 Descrição da manutenção realizada:
+Acumulador soma inicializado em 0
 
+Loop infinito com break no zero
+
+Conversão para float para aceitar decimais
 
 
 ----------------------------------------------------------------------------
 
 Programa 11 – Função Soma
 Descrição da manutenção realizada:
+Função soma_valores() bem definida
 
+Uso da função built-in sum()
+
+Leitura e armazenamento em lista
 
 
 ----------------------------------------------------------------------------
 
 Programa 12 – Menu com elif
 Descrição da manutenção realizada:
+Estrutura if-elif-else correta
 
+Validação de opção inválida
+
+Conversão para inteiro
 
 
 

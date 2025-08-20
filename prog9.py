@@ -1,8 +1,10 @@
-palavra = input("Digite uma palavra: ")
+# Programa 9 – Contagem de Vogais
+palavra = input("Digite uma palavra: ").lower()
+vogais = "aeiou"
+contador = 0
 
-vogais = 0
 for letra in palavra:
-    if letra in ["a", "e", "i", "o", "u"]:
-        vogais += 1
+    if letra in vogais:
+        contador += 1
 
-print("Quantidade de vogais:", vogais)
+print(f"A palavra '{palavra}' tem {contador} vogais")

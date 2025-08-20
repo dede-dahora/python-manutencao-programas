@@ -1,9 +1,15 @@
+# Programa 5 – Jogo de Adivinhação
 import random
-numero = 10
-palpite = int(input("Tente adivinhar o número: "))
-if palpite > numero:
-    print("Menor")
-elif palpite < numero:
-    print("Maior")
-else:
-    print("Acertou!")
+
+numero_secreto = random.randint(1, 20)
+
+while True:
+    palpite = int(input("Adivinhe o número (1-20): "))
+    
+    if palpite == numero_secreto:
+        print("Parabéns! Você acertou!")
+        break
+    elif palpite < numero_secreto:
+        print("Tente um número maior!")
+    else:
+        print("Tente um número menor!")

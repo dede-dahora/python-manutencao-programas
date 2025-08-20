@@ -1,8 +1,8 @@
-n = int(input("Digite um número: "))
+# Programa 7 – Impressão de Ímpares
+n = int(input("Digite um número N: "))
 
-i = 1
-while i <= n:
+print("Números ímpares entre 1 e", n, ":")
+for i in range(1, n + 1):
     if i % 2 == 0:
-        continue   
-    print(i)
-    i += 1
+        continue
+    print(i, end=" ")

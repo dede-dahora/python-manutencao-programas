@@ -1,8 +1,10 @@
+# Programa 10 – Acumulador de Valores
 soma = 0
-valor = int(input("Digite um valor (0 para sair): "))
 
-while valor != 0:
-    soma = valor
-    valor = int(input("Digite um valor (0 para sair): "))
+while True:
+    valor = float(input("Digite um valor (0 para sair): "))
+    if valor == 0:
+        break
+    soma += valor
 
-print("Soma =", soma)
+print(f"Soma total dos valores: {soma}")
